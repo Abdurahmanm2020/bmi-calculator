@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title class="tab">BMI calculator</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<fb:send href="http://www.mywebsite.com/something"></fb:send> 
+
+<div class="container">
+ 
+    <div class="col-md-12">
+      
+        <div id="calculator">
+		
+		<div class="top">
+                  <div class="digital-clock">00:00:00</div>
+            </div>
+            
+			<div class="move-1">
+<h2 class="text-center calculator-title">BMI Calculator</h2>
+          <hr class="calculator-hr"/>
+</div>
+			
+			
+            <div class="screen">
+			 
+            <input type="button" id="fe" class="fem" value="" onclick="addClassByClick2(this)"  />
+            <input type="button" id="m" class="m" value="" onclick="addClassByClick(this)"  />
+            </div>
+
+      <div class="row">
+     <div class="move">
+       
+		 	  <span class="strong"><strong>Height</strong></span> 
+           <div class="height">
+            <input class="value_range" id="height" type="range" value="150" min="100" max="300" step="1"/>
+            <div class="label-height field-text">0</div>
+          </div>
+		  <span class="strong"><strong>Weight</strong></span> 
+          <div class="weight">
+            <input class="value_range" id="weight" type="range" value="70" min="0" max="300" step="1"/>
+            <div class="label-weight field-text">0</div>
+          </div>
+		  <span class="strong"><strong>Age</strong></span> 
+          <div class="age">
+            <input class="value_range" id="age" type="range" value="22" min="0" max="90" step="1"/>
+            <div class="label-age field-text">0</div>
+          </div>
+		  
+		  </div>
+          <div class="submit">
+		  <div class="buttom"> <input class="cal" type="submit" id="submit" onclick="document.getElementById('calculator-3').style.visibility = 'visible'" onClick="calculateBmi()"value=""/>
+ </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+<div class="container">
+  <div class="row-2">
+    <div class="col-md-12">
+      
+        <div id="calculator-3">
+		
+		<div class="top-1">
+                  <div class="digital-clock">00:00:00</div>
+            </div>
+            
+			<div class="move-1">
+<h2 class="text-center calculator-title">BMI Calculation</h2>
+          <hr class="calculator-hr"/>
+</div>
+			
+			
+            <div class="screen">
+			
+			
+            </div>
+
+     
+     <div class="move-6">
+        <div class="result">
+          <div class="result-text"> 
+            <h1> <img id="my_image" src="OBESE.png"/> <span id="bmiValue">24.8 </span></h1><small id="bmid">Normal</small>
+			<div class="c1"> <h4 id="h5"> "here" </h4></div>
+          </div>
+		  
+		  </div>
+          <div class="submit">
+		  
+           
+          </div>
+        </div>
+		<div class="buttom-1">
+		<!-- <button type="reset" id="reset" onclick="document.getElementById('calculator-6').style.visibility = 'visible'" ">share yout BMI</button>-->
+ <button type="reset" id="reset" onclick="document.location.reload() ">RESET</button>
+
+ </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+<!--<div class="container">
+  <div class="row-2">
+    <div class="col-md-12">
+      
+        <div id="calculator-6">
+		
+		<div class="top-1">
+                  <div class="digital-clock">00:00:00</div>
+            </div>
+            
+			<div class="move-1">
+<h2 class="text-center calculator-title">Shareings BMI</h2>
+          <hr class="calculator-hr"/>
+</div>
+			
+			
+            <div class="screen-2">
+			<hr class="share-hr"/>
+
+			<div class="links">
+  <ul>
+    <li class="social-share facebook">Share on Facebook</li>
+    <li class="social-share twitter">Share on Twitter</li>
+  </ul>
+</div>
+
+     
+<a href="https://www.facebook.com/"> <input type="submit" id = "share_button" value=""></a>
+<a href="https://twitter.com/home"> <input type="submit" id = "share_button-2" value=""></a>
+			
+            </div>
+
+     		<div class="buttom-2">
+ <button type="reset" id="reset" onclick="document.location.reload()">RESET</button>
+
+ </div>
+		  
+		  </div>
+          <div class="submit">
+		  
+           
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>-->
+
+		 
+</body>
+<script src="jquery-3.4.1.min.js"></script>
+ <script src="index.js" charset ="utf-8"> </script>
+
+
+
+
+</html>

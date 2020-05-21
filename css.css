@@ -1,0 +1,20 @@
+
+	 .img {
+    margin-top: 23px;
+    margin-left: 238px;
+    /* margin-left: -301px; */
+}
+
+.tab{
+	font-family: 'Calibri', sans-serif;
+}
+
+body{
+    background-color: #f73946;
+}
+
+button{
+	    width: 0px;
+	background: #00ffff00;
+    border: none;
+}
